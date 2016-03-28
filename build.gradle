@@ -1,0 +1,7 @@
+plugins {
+  id "de.chkpnt.truststorebuilder" version "0.1.41"
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.12'
+}
