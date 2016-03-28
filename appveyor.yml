@@ -8,5 +8,5 @@ build_script:
   - gradlew.bat build
 
 on_success:
-  - keytool -keystore build\cacerts.jks -list -storepass changeit
   - keytool -keystore build\cacerts.jks -v -list -storepass changeit
+  - keytool -keystore build\cacerts.jks -list -storepass changeit  
