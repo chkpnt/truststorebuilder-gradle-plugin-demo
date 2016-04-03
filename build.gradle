@@ -1,5 +1,25 @@
 plugins {
-  id "de.chkpnt.truststorebuilder" version "0.1.41"
+  id "de.chkpnt.truststorebuilder" version "0.2.57"
+}
+
+trustStoreBuilder {
+	// The password used for the TrustStore. Defaults to 'changeit'.
+	//password = "changeit"
+	
+	// Path pointing to the TrustStore being built. Defaults to '$buildDir/cacerts.jks'.
+	//trustStore = "$buildDir/cacerts.jks"
+	
+	// The directory which is scanned for certificates. Defaults to '$projectDir/src/main/certs'.
+	//inputDir = "$projectDir/src/main/certs"
+	
+	// A file being processed as a certificate has to have a file ending from this list. Defaults to  ['crt', 'cer', 'pem'].
+	//acceptedFileEndings = ['crt', 'cer', 'pem']
+	
+	// The list can also be extended using this syntax:
+	//acceptedFileEndings << 'blub'
+	
+	// Number of days the certificates have to be at least valid. Defaults to 90 days.
+	//atLeastValidDays = 90
 }
 
 task wrapper(type: Wrapper) {
