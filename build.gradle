@@ -3,25 +3,28 @@ plugins {
 }
 
 trustStoreBuilder {
-	// The password used for the TrustStore. Defaults to 'changeit'.
-	//password = "changeit"
-	
-	// Path pointing to the TrustStore being built. Defaults to '$buildDir/cacerts.jks'.
-	//trustStore = "$buildDir/cacerts.jks"
-	
-	// The directory which is scanned for certificates. Defaults to '$projectDir/src/main/certs'.
-	//inputDir = "$projectDir/src/main/certs"
-	
-	// A file being processed as a certificate has to have a file ending from this list. Defaults to  ['crt', 'cer', 'pem'].
-	//acceptedFileEndings = ['crt', 'cer', 'pem']
-	
-	// The list can also be extended using this syntax:
-	//acceptedFileEndings << 'blub'
-	
-	// Number of days the certificates have to be at least valid. Defaults to 90 days.
-	//atLeastValidDays = 90
+    // The password used for the TrustStore. Defaults to 'changeit'.
+    //password = "changeit"
+    
+    // Path pointing to the TrustStore being built. Defaults to '$buildDir/cacerts.jks'.
+    //trustStore = "$buildDir/cacerts.jks"
+    
+    // The directory which is scanned for certificates. Defaults to '$projectDir/src/main/certs'.
+    //inputDir = "$projectDir/src/main/certs"
+
+    // As the path is resolved using Project.file(...), an absolute path is not required:
+    //inputDir = "src/main/certs"
+    
+    // A file being processed as a certificate has to have a file ending from this list. Defaults to  ['crt', 'cer', 'pem'].
+    //acceptedFileEndings = ['crt', 'cer', 'pem']
+    
+    // The list can also be extended using this syntax:
+    //acceptedFileEndings << 'txt'
+    
+    // Number of days the certificates have to be at least valid. Defaults to 90 days.
+    //atLeastValidDays = 90
 }
 
 wrapper {
-	gradleVersion = '4.9'
+    gradleVersion = '4.9'
 }
