@@ -22,6 +22,6 @@ trustStoreBuilder {
 	//atLeastValidDays = 90
 }
 
-task wrapper(type: Wrapper) {
-	gradleVersion = '2.12'
+wrapper {
+	gradleVersion = '4.9'
 }
