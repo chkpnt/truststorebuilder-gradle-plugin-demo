@@ -1,5 +1,5 @@
 plugins {
-  id "de.chkpnt.truststorebuilder" version "0.2.57"
+    id "de.chkpnt.truststorebuilder" version "0.3.94"
 }
 
 trustStoreBuilder {
