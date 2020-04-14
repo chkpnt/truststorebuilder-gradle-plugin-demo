@@ -1,5 +1,5 @@
 plugins {
-    id "de.chkpnt.truststorebuilder" version "0.3.94"
+    id "de.chkpnt.truststorebuilder" version "0.4.0"
 }
 
 trustStoreBuilder {
@@ -26,5 +26,5 @@ trustStoreBuilder {
 }
 
 wrapper {
-    gradleVersion = '4.9'
+    gradleVersion = '5.0'
 }
