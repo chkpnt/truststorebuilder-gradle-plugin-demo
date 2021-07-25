@@ -1,5 +1,5 @@
 plugins {
-    id "de.chkpnt.truststorebuilder" version "0.4.0"
+    id "de.chkpnt.truststorebuilder" version "0.5.1"
 }
 
 trustStoreBuilder {
@@ -23,6 +23,12 @@ trustStoreBuilder {
     
     // Number of days the certificates have to be at least valid. Defaults to 90 days.
     //atLeastValidDays = 90
+
+    // Should the check-task depend on checkCertificates? Defaults to true.
+    //checkEnabled = true
+
+    // Should the build-task depend on buildTrustStore? Defaults to true.
+    //buildEnabled = true
 }
 
 wrapper {
